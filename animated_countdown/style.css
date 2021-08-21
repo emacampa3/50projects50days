@@ -34,7 +34,6 @@ h4 {
     0% {
         transform: translate(-50%, -50%) scale(1);
     }
-
     100% {
         transform: translate(-50%, -50%) scale(0);
     }
@@ -56,11 +55,9 @@ h4 {
     0% {
         transform: translate(-50%, -50%) scale(0);
     }
-
     30% {
         transform: translate(-50%, -50%) scale(1.4);
     }
-
     100% {
         transform: translate(-50%, -50%) scale(1);
     }
@@ -96,15 +93,12 @@ h4 {
     0% {
         transform: translate(-50%, -50%) rotate(120deg);
     }
-
     30% {
         transform: translate(-50%, -50%) rotate(-20deg);
     }
-
     60% {
         transform: translate(-50%, -50%) rotate(10deg);
     }
-
     100% {
         transform: translate(-50%, -50%) rotate(0deg);
     }
@@ -114,11 +108,9 @@ h4 {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
     }
-
     60% {
         transform: translate(-50%, -50%) rotate(20deg);
     }
-
     100% {
         transform: translate(-50%, -50%) rotate(-120deg);
     }
