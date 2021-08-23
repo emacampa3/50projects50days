@@ -5,13 +5,13 @@
 }
 
 :root {
-  --primary-color: #545454;
+  --primary-color: #789;
   --secondary-color: #fff;
 }
 
 html.dark {
   --primary-color:#fff;
-  --secondary-color:#333;
+  --secondary-color:#789;
 }
 
 html {
@@ -19,7 +19,7 @@ html {
 }
 
 html.dark {
-  background-color: #333;
+  background-color: #424F51;
   color: var(--primary-color);
 }
 
