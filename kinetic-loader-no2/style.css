@@ -1,0 +1,71 @@
+body {
+    background-color: #aa6c58;
+    color: rgb(229, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/** Global preloader styles **/
+.loader, .loader:before, .loader:after {
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.loader {
+	margin: 0 auto 1.5em auto;
+	position: relative;
+	width: 3em;
+	height: 3em;
+}
+
+.loader:before, .loader:after {
+	background: currentColor;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	transform-origin: 50% 100%;	
+	clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+/* Origami */
+.loader-origami {
+	animation-name: origamiA;
+	animation-timing-function: steps(4);
+}
+
+.loader-origami:before, .loader-origami:after {
+	clip-path: polygon(50% 0, 100% 100%, 0% 100%);
+}
+
+.loader-origami:before {
+	animation-name: origamiB;
+}
+
+.loader-origami:after {
+	animation-name: origamiC;
+	transform: rotate(180deg);
+}
+
+@keyframes origamiA {
+	from { transform: rotate(0) }
+	to { transform: rotate(-360deg) }
+}
+
+@keyframes origamiB {
+	from, 25%, 50%, 75%, to { opacity: 1; transform: translateZ(0) rotateX(0deg) }
+	12.5%, 62.5% { opacity: 1; transform: translateZ(1px) rotateX(-180deg) }
+	37.5%, 87.5% { opacity: 0; transform: translateZ(0) rotateX(0deg) }
+}
+
+@keyframes origamiC {
+	from, 25%, 50%, 75%, to { opacity: 1; transform: translateZ(0) rotateZ(180deg) rotateX(0deg) }
+	12.5%, 62.5% { opacity: 0; transform: translateZ(0) rotateZ(180deg) rotateX(0deg) }
+	37.5%, 87.5% { opacity: 1; transform: translateZ(1px) rotateZ(180deg) rotateX(-180deg) }
+}
