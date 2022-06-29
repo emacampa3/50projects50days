@@ -1,7 +1,7 @@
 const boxesContainer = document.getElementById('boxes')
-const buttonn = document.getElementById('button')
+const button = document.getElementById('button')
 
-buttonn.addEventListener('click', () => boxesContainer.classList.toggle('big'))
+button.addEventListener('click', () => boxesContainer.classList.toggle('big'))
 
 function createBoxes() {
   for (let i = 0; i < 4; i++) {
